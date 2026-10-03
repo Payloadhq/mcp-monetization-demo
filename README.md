@@ -63,3 +63,10 @@ Tune the demo: `PAYLOAD_FREE_QUOTA=3 python3 demo.py`,
 - **More Payload repos** — https://github.com/Payloadhq
 
 Support: kylers.partners@gmail.com · "Small software that earns its keep."
+
+---
+
+**Payload** — small, sharp tools for developers.
+Developer portal: https://payloadhq.github.io/ ·
+All products: https://payloadtools.gumroad.com/ ·
+Contact: kylers.partners@gmail.com
