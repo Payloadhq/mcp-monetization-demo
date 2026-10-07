@@ -3,7 +3,7 @@
 *by Payload — a free, runnable demo of per-tool-call metering for MCP servers.*
 
 A small, runnable MCP server that demonstrates **the core mechanic of the
-paid MCP Monetization Kit**: per-tool-call metering with a free quota (default
+paid MCP Monetization Engine**: per-tool-call metering with a free quota (default
 2 calls in the guided demo; 5 when running `server.py` directly), then a
 machine-readable `PAYMENT REQUIRED` response once the quota is exhausted.
 
@@ -13,7 +13,7 @@ as a free service.
 
 ## Who it's for
 
-Developers considering the MCP Monetization Kit who want to see the paywall mechanic run before buying.
+Developers considering the MCP Monetization Engine who want to see the paywall mechanic run before buying.
 
 ## Try it (free, under a minute)
 
@@ -42,7 +42,7 @@ This demo **proves the monetization mechanic works**. It does not replace the
 paid products. Concretely, the demo has **no**:
 
 - **Real payment collection.** The paid
-  [**MCP Monetization Kit** ($69)](https://payloadtools.gumroad.com/l/mcp-monetization-kit)
+  [**MCP Monetization Engine** ($69)](https://payloadtools.gumroad.com/l/mcp-monetization-kit)
   collects actual per-call USDC payments via the x402 flow, with two verifiers
   (HMAC dev verifier for testing, facilitator verifier for production) —
   non-custodial, it verifies payment then runs your tool.
@@ -66,7 +66,7 @@ paid products. Concretely, the demo has **no**:
 ## Price
 
 **Free.** This demo costs nothing and needs no purchase. The paid kits it
-demonstrates are $69 (MCP Monetization Kit) and $79 (MCP Launch Readiness Audit).
+demonstrates are $69 (MCP Monetization Engine) and $79 (MCP Launch Readiness Audit).
 
 ## Support
 
@@ -75,7 +75,7 @@ demonstrates are $69 (MCP Monetization Kit) and $79 (MCP Launch Readiness Audit)
 
 ## Payload Tools ecosystem
 
-- **MCP Monetization Kit** — charge per tool call: https://payloadtools.gumroad.com/l/mcp-monetization-kit
+- **MCP Monetization Engine** — charge per tool call: https://payloadtools.gumroad.com/l/mcp-monetization-kit
 - **MCP Launch Readiness Audit** — scan, fix, and prove launch readiness: https://payloadtools.gumroad.com/l/mcp-launch-readiness-audit
 - **All Payload products** — https://payloadtools.gumroad.com
 - **More Payload repos** — https://github.com/Payloadhq
