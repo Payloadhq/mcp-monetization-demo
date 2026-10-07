@@ -86,3 +86,9 @@ demonstrates are $69 (MCP Monetization Engine) and $79 (MCP Launch Readiness Aud
 Developer portal: https://payloadhq.github.io/ ·
 All products: https://payloadtools.gumroad.com/ ·
 Contact: kylers.partners@gmail.com
+
+---
+
+**More from Payload** · [payloadhq.github.io](https://payloadhq.github.io/) · [all Payload repos](https://github.com/Payloadhq)
+
+Related: [mcp-monetization-kit](https://github.com/Payloadhq/mcp-monetization-kit) · [payload-sample-mcp-server](https://github.com/Payloadhq/payload-sample-mcp-server)
