@@ -1,4 +1,6 @@
-# MCP Monetization Demo — by Payload
+# MCP Monetization Demo
+
+*by Payload — a free, runnable demo of per-tool-call metering for MCP servers.*
 
 A small, runnable MCP server that demonstrates **the core mechanic of the
 paid MCP Monetization Kit**: per-tool-call metering with a free quota, then a
@@ -8,7 +10,13 @@ Free tools stay free. Premium tools get a free quota (default 5 calls). After
 that, callers see exactly how a paywall works — and the demo is hard-capped
 (200 total calls) so it can't be used as a free service.
 
-Run it in under a minute — Python 3.8+, stdlib only, nothing to install:
+## Who it's for
+
+Developers considering the MCP Monetization Kit who want to see the paywall mechanic run before buying.
+
+## Try it (free, under a minute)
+
+Python 3.8+, stdlib only, nothing to install:
 
 ```bash
 python3 demo.py
@@ -17,7 +25,17 @@ python3 demo.py
 Output: a free tool call, two premium calls inside the quota, a third that
 returns `PAYMENT_REQUIRED` with the upgrade path.
 
-## What's deliberately missing (the paid kits)
+Tune the demo: `PAYLOAD_FREE_QUOTA=3 python3 demo.py`,
+`PAYLOAD_HARD_CAP=500`.
+
+## Files
+
+| File | What it is |
+|---|---|
+| `server.py` | The demo MCP server (JSON-RPC over stdio, stdlib only) |
+| `demo.py` | Guided client: spins up the server, exhausts the quota, shows the paywall |
+
+## What this demo does NOT include (the paid kits)
 
 This demo **proves the monetization mechanic works**. It does not replace the
 paid products. Concretely, the demo has **no**:
@@ -44,16 +62,15 @@ paid products. Concretely, the demo has **no**:
 - **No artificial caps.** The demo stops at 200 calls. The paid kits are yours
   to run unlimited — you set your own prices and quotas.
 
-## Files
+## Price
 
-| File | What it is |
-|---|---|
-| `server.py` | The demo MCP server (JSON-RPC over stdio, stdlib only) |
-| `demo.py` | Guided client: spins up the server, exhausts the quota, shows the paywall |
-| `PUSH_CHECKLIST.md` | Internal push status (not part of the product) |
+**Free.** This demo costs nothing and needs no purchase. The paid kits it
+demonstrates are $69 (MCP Monetization Kit) and $79 (MCP Launch Readiness Audit).
 
-Tune the demo: `PAYLOAD_FREE_QUOTA=3 python3 demo.py`,
-`PAYLOAD_HARD_CAP=500`.
+## Support
+
+- Support: kylers.partners@gmail.com
+- "Small software that earns its keep."
 
 ## Payload Tools ecosystem
 
@@ -61,8 +78,6 @@ Tune the demo: `PAYLOAD_FREE_QUOTA=3 python3 demo.py`,
 - **MCP Launch Readiness Audit** — scan, fix, and prove launch readiness: https://payloadtools.gumroad.com/l/mcp-launch-readiness-audit
 - **All Payload products** — https://payloadtools.gumroad.com
 - **More Payload repos** — https://github.com/Payloadhq
-
-Support: kylers.partners@gmail.com · "Small software that earns its keep."
 
 ---
 
