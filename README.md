@@ -3,12 +3,13 @@
 *by Payload — a free, runnable demo of per-tool-call metering for MCP servers.*
 
 A small, runnable MCP server that demonstrates **the core mechanic of the
-paid MCP Monetization Kit**: per-tool-call metering with a free quota, then a
+paid MCP Monetization Kit**: per-tool-call metering with a free quota (default
+2 calls in the guided demo; 5 when running `server.py` directly), then a
 machine-readable `PAYMENT REQUIRED` response once the quota is exhausted.
 
-Free tools stay free. Premium tools get a free quota (default 5 calls). After
-that, callers see exactly how a paywall works — and the demo is hard-capped
-(200 total calls) so it can't be used as a free service.
+Free tools stay free. After the quota, callers see exactly how a paywall
+works — and the demo is hard-capped (200 total calls) so it can't be used
+as a free service.
 
 ## Who it's for
 
@@ -25,7 +26,7 @@ python3 demo.py
 Output: a free tool call, two premium calls inside the quota, a third that
 returns `PAYMENT_REQUIRED` with the upgrade path.
 
-Tune the demo: `PAYLOAD_FREE_QUOTA=3 python3 demo.py`,
+Tune the demo: `DEMO_QUOTA=3 python3 demo.py`,
 `PAYLOAD_HARD_CAP=500`.
 
 ## Files
